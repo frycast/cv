@@ -15,7 +15,7 @@ Academic CV built using R, pulling data automatically from ORCID and Google Scho
 
 ## Tools
 
-- [`{vitae}`](https://docs.ropensci.org/vitae/) :package: is used to provide a CV template.
-- [`{scholar}`](https://github.com/jkeirstead/scholar) :package: is used to pull papers from Google Scholar.
+- [`{vitae}`](https://docs.ropensci.org/vitae/) :package: to provide a CV template.
+- [`{scholar}`](https://github.com/jkeirstead/scholar) :package: to pull papers from Google Scholar.
 - [`{tinytex}`](https://github.com/yihui/tinytex) :package: to manage LaTex installation and additional packages.
 - [`{rorcid}`](https://github.com/ropensci/rorcid/) :package: to pull data from ORCID.
