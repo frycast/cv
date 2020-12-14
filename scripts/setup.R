@@ -85,12 +85,14 @@ pubs <- scholar::get_publications("DBWm9DYAAAAJ") %>% # choose Google id here
                   as.character %>% 
                   stringr::str_trim(),
                 journal = journal %>% 
-                  replace(journal %in% "arXiv preprint arXiv:", "arXiv"), 
+                  replace(journal %in% "arXiv preprint arXiv:", "arXiv") %>% 
+                  replace(journal %in% "arXiv preprint, arXiv:", "arXiv"), 
                 first_author = dplyr::case_when(
                   stringr::str_starts(author, "D Fryer") ~ TRUE, # choose name
                   TRUE ~ FALSE),
                 preprint = case_when(
-                  journal %in% c("arXiv preprint arXiv:", "arXiv") ~ TRUE, 
+                  journal %in% c("arXiv preprint arXiv:", "arXiv",
+                                 "arXiv preprint, arXiv:") ~ TRUE, 
                   TRUE ~ FALSE)) %>% 
   dplyr::arrange(desc(year))
 
