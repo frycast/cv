@@ -2,6 +2,8 @@
 
 Academic CV built using R, pulling data automatically from ORCID and Google Scholar. See the full CV in pdf format [here](cv/cv.pdf).
 
+Before running [cv.Rmd](cv/cv.Rmd) to generate the CV, you will need to run lines 1-10 of [setup.R](scripts/setup.R) to manually authenticate with ORCID.
+
 ## Sources
 
 * Education, employment, service and awards are pulled from [ORCID](https://orcid.org/0000-0001-6032-0522).
