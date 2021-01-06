@@ -6,7 +6,7 @@ www: danielvfryer.com
 email: daniel@vfryer.com
 twitter: _frycast
 github: frycast
-aboutme: "I'm in love with statistics, programming and science, but the four of us have complicated relationship issues. Complex data analyses are used in every industry and scientific field, but so many of the results are unintuitive and difficult to interpret. I aim to make complex models more transparent, understandable and explainable. To make this research accessible, I write software packages and libraries in R, Python and Julia. My aim is not just to work theoretically, but also to apply these methods to impactful real world problems. Aside from research, I'm a passionate teacher, and I serve as a council member and Early Career and Student Statisticians' Representative at the Statistical Society of Australia."
+aboutme: "Complex data analyses are used in every industry and scientific field, but so many of the results are unintuitive and difficult to interpret. My aim is to make complex models more transparent, understandable and explainable, through research at the forefront of explainable AI, as well as through teaching and communication in general. I enjoy writing code (including software packages and libraries) in R, Python and Julia. I'm comfortable working theoretically, but I always want to apply theoretical methods to important real world problems. Aside from research, I teach various courses, and serve as a council member and Early Career and Student Statisticians' Representative at the Statistical Society of Australia."
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "000000"
 output: vitae::awesomecv
