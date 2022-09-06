@@ -6,6 +6,10 @@ if(!require(glue)) install.packages("glue", repos=mirror)
 if(!require(scholar)) install.packages("scholar", repos=mirror)
 if(!require(dplyr)) install.packages("dplyr", repos=mirror)
 if(!require(stringr)) install.packages("stringr", repos=mirror)
+if(!require(httpuv)) install.packages("httpuv", repos=mirror)
+if (tinytex::tinytex_root() == "") {
+  tinytex::install_tinytex()
+}
 
 Sys.setenv(ORCID_TOKEN = gsub("Bearer ", "", rorcid::orcid_auth()))
 
