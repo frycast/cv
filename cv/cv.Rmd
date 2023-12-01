@@ -1,12 +1,11 @@
 ---
 name: Daniel Fryer
-position: "Statistics PhD | Data Scientist | Lecturer"
-address: "School of Mathematics and Physics, The University of Queensland"
+position: "Statistics PhD | Senior Data Scientist | Lecturer"
+address: "School of Mathematics and Statistics, La Trobe University"
 www: danielvfryer.com
-email: daniel@vfryer.com
-twitter: _frycast
+email: danielvfryer@gmail.com
 github: frycast
-aboutme: "I'm an early career PhD data scientist, and I'm in the rare position of having combined a rigorous understanding of applied statistics with strong skills in computer science, software engineering, and collaboration on technical projects. I have worked independently, as a researcher, project leader, and software developer, on multiple large exploratory and confirmatory analysis projects, and on research software development projects. I am great at working in messy unprocessed \"big\" data scenarios, involving local and cloud based SQL database management systems. I liase with statisticians, scientists, medical professionals, and executives, and I work with local and international partners, to deliver analysis and preprocessing pipelines that deliver security, confidentiality, interactivity / usability, modularity / reusability, documentation, collaboration, and machine learning / statistical rigour. I have written many private and open source R packages, two of which are currently on CRAN. I teach meta-analysis to Master's students, and I teach database design and SQL programming to professional statisticians and social scientists. I also currently serve as the executive privacy officer and database administrator at the Statistical Society of Australia, as well as technical sub-editor at the Australian & New Zealand Journal of Statistics. In my spare time I enjoy camping, video games, exercise, tasty food, and good conversation."
+aboutme: "PhD data scientist with a passion for statistics, data engineering and teaching."
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: "000000"
 output: vitae::awesomecv

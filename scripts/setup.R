@@ -82,22 +82,21 @@ preprint <- my_works$type == "preprint"
 my_works_preprint <- my_works[preprint,]
 my_works_published <- my_works[!preprint,]
 
-
 ## Publications from scholar are cleaner
 pubs <- scholar::get_publications("DBWm9DYAAAAJ") %>% # choose Google id here
   dplyr::mutate(author = author %>% 
                   as.character %>% 
                   stringr::str_trim(),
-                journal = journal %>% 
-                  replace(journal %in% "arXiv preprint arXiv:", "arXiv") %>% 
-                  replace(journal %in% "arXiv preprint, arXiv:", "arXiv"), 
+                journal = ifelse(journal == "", number, journal),
+                journal = ifelse(journal == "", "preprint", journal),
+                journal = journal %>%
+                  replace(journal %in% "arXiv preprint arXiv:", "arXiv") %>%
+                  replace(journal %in% "arXiv preprint, arXiv:", "arXiv"),
                 first_author = dplyr::case_when(
                   stringr::str_starts(author, "D Fryer") ~ TRUE, # choose name
                   TRUE ~ FALSE),
                 preprint = case_when(
                   journal %in% c("arXiv preprint arXiv:", "arXiv",
-                                 "arXiv preprint, arXiv:") ~ TRUE, 
+                                 "arXiv preprint, arXiv:", "hal") ~ TRUE, 
                   TRUE ~ FALSE)) %>% 
   dplyr::arrange(desc(year))
-
-
